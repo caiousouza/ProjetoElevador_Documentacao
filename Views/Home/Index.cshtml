@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "~Proj_Elev_Doc~";
+}
+
+    <div class="text-left">
+    <h3><b></distributed-cache><span style="color:#2980b9">DOCUMENTAÇÃO-PROJETO ELEVADOR</b></h3>
+    <p><b>FORMAÇÃO MS-DEV - SAMSUNG OCEAN</b></p>
+    </div>
+
+<boddy>
+
+<p>RESUMO GERAL:  Neste projeto, o intuito é aplicar o conhecimento adquirido nesta jornada de estudo de lógica de programação e praticar os tipos de dados, 
+    controle de fluxo, laços de repetição utilizando funções. O projeto será um software que tem como função o gerenciamento de um elevador, ele terá as funções 
+    de inicializar, entrar, sair, subir e descer. O projeto foi publicado no <a href="https://github.com/caiousouza/ProjetoElevador">github.</a></p> 
+
+<div class="text-center"><h5><b>---INSTRUÇÕES---</b></h5></div>
+<p>Utilize o Visual Studio Community, crie um projeto Aplicativo de Co
+    nsole (console app) como nome ProjetoElevador, utilize a estrutura .NET 5 ou inferior. 
+   Todas as classes deverão ficar em uma pasta chamada Model, a estrutura com as pastas de Controller e View são opcionais. Crie uma classe denominada Elevador 
+   para armazenar as informações de um elevador dentro de um prédio, a classe deve armazenar o andar atual (térreo = 0), total de andares no prédio 
+   (desconsiderando o térreo), capacidade do elevador e quantas pessoas estão presentes nele. A classe deve também disponibilizar os seguintes métodos:  inicializar,
+   entrar, sair, subir e descer.</p>
+
+<div class="text-center"><h5><b>~DESCRIÇÃO DO PROGRAMA~</b></h5></div>
+
+<h6>~FUNCIONABILIDADE:</h6>
+
+<p>Assim que o projeto for iniciado, surgira uma mensagem de "Boas-Vindas", e logo em seguida surgira dois campos de pergunta pedindo para o user informar a quantidade 
+   de andares, e a capaciade do elevador. O metodo "Inicializar()" será utilizado para fazer as perguntas e receber as respostas. Logo após os campos de pergunta 
+   serem respondidos, as variaveis que armazenaram as respostas, seram convertidas para "int", e seram alocadas dentro de outras variaveis.</p>
+
+<img src="/img/Lacdr.jpg" />
+<p>-</p>
+
+<p>Após o Metodo "Inicializar()" ser concluido, o projeto irá iniciar o laço de repetição do-while, com o intuito de repetir as opções pre definidas ao user, até 
+   a opção de finalizar o programa for escolhida. As opções disponiveis serão: adicionar, retirar, subir, descer e finalizar. A variavel "escolha" irá receber a 
+   escolha decidida e será armacenada dentro da variavel "Num", após ser convertida em inteira. Logo após que a escolha for recebida, convertida e armazenada, a 
+   instrução switch receberá a variavel "Num" e chamará o Metodo correspondente ao solicitado, executando o Metodo e logo em seguida retornado uma mensagem para informar 
+   qual ação foi executada e qual o status do elevador. Dentre as opções disponiveis, há um comando chamado "default", ele será executado quando o user precionar alguma
+   tecla diferente das disponiveis a ele.</p>
+
+<img src="/img/switch.jpg" />
+<p>-</p>
+
+<h6>~METODOS:</h6>
+
+<p>Os Metodos estão alocados em uma class denominada "Elevador.cs", podemos ultilizar essa class por a mesma ser publica, sendo chamada pelo nosso programa por uma biblioteca,
+   cada Metodo tem uma função espeficica, quanndo for executado mudará e retornará a variavel com um novo valor, em seguida retornando uma mensagem da ação feita, e os status do 
+   elevador. Podemos usar como exemplo o Metodo Entrar().</p>
+
+<img src="/img/MetEnt.jpg" />
+<p>-</p>
+
+<p>O metodo Entra() será ultilizado para adicionar um passageiro, toda vez que for executado ela adicionarar +1, nós podemos notar que há a instrução "IF" e ELSE", se o 
+   valor corresponder quantidade de pessoas atual sendo menor que a quantidade de pessoas total, a instrução "IF" ela será executada, e dentro dela há um novo comando, este comando
+   "PessoasAtual++" serve para adicinar o passageiro, ela terá a função de sempre acrescentar,há a possiblidade de ter outro "IF" ou um "RETURN", se a variavel "AndarAtual" for 
+   correspondente a "0"", o "RETURN" dentro do segundo "IF" será executado e retornará uma mensagem informando que o elevador está no terrio e a quantidade exata de passageiros no 
+   elevador. Senão o primeiro "RETURN" será executado e retornando que entrou um passageiro, o andar atual e a quantidade exata de passageiros. O "ELSE" será executado caso não seja 
+   atencido os requisitos de "IF", Retornado a mensagem que o elevador atingiu a sua capacidade maxima, o andar atual e a quantidade exata de passageiros.</p>
+
+<p>O codigo "Console.Clear();" é ultilizado toda vez que for necessario retornar uma mensagem para o user, assim o console ficará mais limpo e e as informações retornadas ficam mais 
+    nitidas. A mesma metodologia ultilizada para adicionar passageiros no elevador, tambêm pode ser utilizada para subitrair passageiros, ou subir um andar, ou descer um andar, só
+    tendo uma pequena diferença na sua sintaxe, que seria o "PessoasAtual--", ou o "AndarAtual++", ou "AndarAtual--".<p>
+
+<img src="/img/MetSair.jpg"/>
+<p>-</p>
+
+<h6>~EXECUÇÃO:</h6>
+
+<p>Com o projeto finalizado e todos os pontos e virgulas em seus devidos lugares, o programa terá um visual do prompt de comando, simples, legivel e funcional, botando 
+   tudo pra rodar.</p>
+
+<img src="/img/cap2.jpg" />
+<p>-</p>
+
+<P>Autor: Caio Souza Queiroz</P>
+</boddy>
